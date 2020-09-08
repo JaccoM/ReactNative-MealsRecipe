@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { enableScreens } from 'react-native-screens';
 import { AppLoading } from 'expo';
 
@@ -28,16 +28,5 @@ export default function App() {
     );
   }
 
-  return (
-    <MealsNavigator />
-  );
+  return <MealsNavigator />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
